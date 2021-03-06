@@ -2,7 +2,10 @@
 
 @mixin btnStyle($bg) {
   .btn {
+    display: inline-block;
+    font-size: 1.8rem;
     padding: 1rem 3rem;
+    border-radius: 5px;
     text-transform: uppercase;
     @if ($bg == "orange-bordered") {
       color: var.$primary-color;

@@ -1,0 +1,39 @@
+@use '../components/' as btn;
+
+.hero {
+  background: #f1f1f2;
+
+  .d-flex-layout {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-2 {
+    flex: 1 1 60rem;
+  }
+
+  .lead {
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    .content {
+      padding: 3rem;
+      max-width: 50rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  @include btn.btnStyle("orange");
+}
