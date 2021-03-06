@@ -1,0 +1,29 @@
+@use '../components/' as btn;
+
+.header {
+  font-size: 1.8rem;
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    width: 90%;
+    margin: 0 auto;
+
+    ul {
+      display: flex;
+      li {
+        margin: 2rem;
+      }
+    }
+  }
+
+  &__logo {
+    img {
+      width: 7rem;
+    }
+  }
+
+  @include btn.btnStyle("black");
+}
