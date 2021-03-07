@@ -1,12 +1,11 @@
 @use '../components/' as btn;
 @use '../abstract/' as text;
 
-.hero {
+.feature {
   background: #f1f1f2;
-
   &__text {
     @include text.hero-content-positon();
   }
 
-  @include btn.btn-style("orange");
+  @include btn.btn-style("orange-bordered");
 }

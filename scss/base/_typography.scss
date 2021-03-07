@@ -2,6 +2,11 @@
   font-size: clamp(3rem, 5vw, 6rem);
 }
 
+.heading-h2 {
+  font-weight: 100;
+  font-size: clamp(3rem, 1vw, 5rem);
+}
+
 .lead {
   font-size: clamp(1.8rem, 1vw, 2rem);
   margin-bottom: 3rem;

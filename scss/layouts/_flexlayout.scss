@@ -1,0 +1,12 @@
+.d-flex-layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reverse {
+  flex-flow: row-reverse wrap;
+}
+
+.col-2 {
+  flex: 1 1 50rem;
+}
