@@ -30,6 +30,16 @@ ul {
   margin: 0;
 }
 
+.container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+}
+
 .heading-h1 {
   font-size: clamp(3rem, 5vw, 6rem);
 }
