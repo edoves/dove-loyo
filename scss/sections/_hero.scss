@@ -1,5 +1,6 @@
 @use '../components/' as btn;
 @use '../abstract/' as text;
+@use '../layouts/' as flex;
 
 .hero {
   background: #f1f1f2;
@@ -7,6 +8,8 @@
   &__text {
     @include text.hero-content-positon();
   }
+
+  @include flex.dove-flex-layout("col");
 
   @include btn.btn-style("orange");
 }

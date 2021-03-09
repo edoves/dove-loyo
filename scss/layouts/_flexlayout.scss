@@ -1,6 +1,14 @@
-.d-flex-layout {
-  display: flex;
-  flex-wrap: wrap;
+@mixin dove-flex-layout($col) {
+  .d-flex-layout {
+    display: flex;
+    flex-wrap: wrap;
+    @if ($col== "col") {
+      display: flex;
+      flex-wrap: wrap;
+    } @else if($col== "col-4") {
+      justify-content: space-between;
+    }
+  }
 }
 
 .reverse {
