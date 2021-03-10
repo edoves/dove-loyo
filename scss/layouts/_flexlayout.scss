@@ -1,3 +1,5 @@
+@use '../abstract/' as mediaquery;
+
 @mixin dove-flex-layout($col) {
   .d-flex-layout {
     display: flex;
@@ -6,7 +8,11 @@
       display: flex;
       flex-wrap: wrap;
     } @else if($col== "col-4") {
-      justify-content: space-between;
+      justify-content: center;
+
+      @include mediaquery.respond(ipad) {
+        justify-content: space-between;
+      }
     }
   }
 }

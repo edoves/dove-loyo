@@ -1,0 +1,47 @@
+@use '../layouts/' as flex;
+@use '../abstract/' as mediaquery;
+
+.post {
+  padding: 6rem 0;
+  @include flex.dove-flex-layout("col-4");
+
+  &__blog {
+    background: #fff;
+    padding: 1rem;
+    width: 100%;
+
+    @include mediaquery.respond(ipad-min-max) {
+      width: 50%;
+    }
+
+    @include mediaquery.respond(phone-min-max) {
+      width: 50%;
+    }
+
+    @include mediaquery.respond(desktop) {
+      width: 25%;
+    }
+  }
+
+  &__text {
+    background: #fafafa;
+    height: 20rem;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 1px 0px 9px 0px #888888;
+    }
+  }
+
+  &__link {
+    color: #000;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+  }
+}
