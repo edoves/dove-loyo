@@ -11,5 +11,7 @@
 
   @include flex.dove-flex-layout("col");
 
-  @include btn.btn-style("orange");
+  .btn {
+    @include btn.btn-style("orange");
+  }
 }

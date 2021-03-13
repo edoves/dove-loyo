@@ -29,5 +29,9 @@
     }
   }
 
-  @include btn.btn-style("orange-bordered");
+  &__button {
+    .btn {
+      @include btn.btn-style("orange-bordered");
+    }
+  }
 }

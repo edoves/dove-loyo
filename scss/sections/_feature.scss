@@ -10,5 +10,7 @@
 
   @include flex.dove-flex-layout("col");
 
-  @include btn.btn-style("orange-bordered");
+  .btn {
+    @include btn.btn-style("orange-bordered");
+  }
 }

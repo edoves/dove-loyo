@@ -1,0 +1,44 @@
+@use '../abstract/' as var;
+@use '../layouts/' as flex;
+@use '../abstract/' as mediaquery;
+@use '../components/' as btn;
+
+.cta {
+  padding: 5rem;
+  background-color: var.$primary-color;
+
+  @include flex.dove-flex-layout("col-2");
+
+  .heading-h3 {
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: clamp(2.5em, 2vw, 3.2rem);
+  }
+
+  .lead {
+    margin-top: 0;
+    font-size: clamp(2.5rem, 2vw, 3.2rem);
+  }
+
+  &__content {
+    // @media only screen and (min-width: 65em) {
+    //   margin: 0 13rem;
+    // }
+  }
+
+  &__btn {
+    // margin-top: -1rem;
+    .btn {
+      display: inline-block;
+      margin-right: 0.652rem;
+      margin-bottom: 1rem;
+    }
+    .btn:nth-child(1) {
+      @include btn.btn-style("black");
+    }
+
+    .btn:nth-child(2) {
+      @include btn.btn-style("black-bordered");
+    }
+  }
+}

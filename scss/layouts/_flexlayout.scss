@@ -7,6 +7,11 @@
     @if ($col== "col") {
       display: flex;
       flex-wrap: wrap;
+    } @else if($col== "col-2") {
+      align-items: center;
+      @include mediaquery.respond(ipad) {
+        justify-content: space-between;
+      }
     } @else if($col== "col-4") {
       justify-content: center;
 

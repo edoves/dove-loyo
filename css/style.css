@@ -32,7 +32,7 @@ ul {
 
 .container {
   width: 80%;
-  max-width: 120rem;
+  max-width: 153rem;
   margin: 0 auto;
 }
 
@@ -93,9 +93,9 @@ ul {
 .header__logo img {
   width: 7rem;
 }
-.header .btn {
+.header__button .btn {
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
   padding: 1rem 3rem;
   border-radius: 5px;
   text-transform: uppercase;
@@ -131,7 +131,7 @@ ul {
 }
 .hero .btn {
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
   padding: 1rem 3rem;
   border-radius: 5px;
   text-transform: uppercase;
@@ -166,7 +166,7 @@ ul {
 }
 .feature .btn {
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
   padding: 1rem 3rem;
   border-radius: 5px;
   text-transform: uppercase;
@@ -225,6 +225,54 @@ ul {
   color: #000;
   font-size: 1.6rem;
   text-transform: capitalize;
+}
+
+.cta {
+  padding: 5rem;
+  background-color: #f7941e;
+}
+.cta .d-flex-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media only screen and (min-width: 48em) {
+  .cta .d-flex-layout {
+    justify-content: space-between;
+  }
+}
+.cta .heading-h3 {
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: clamp(2.5em, 2vw, 3.2rem);
+}
+.cta .lead {
+  margin-top: 0;
+  font-size: clamp(2.5rem, 2vw, 3.2rem);
+}
+.cta__btn .btn {
+  display: inline-block;
+  margin-right: 0.652rem;
+  margin-bottom: 1rem;
+}
+.cta__btn .btn:nth-child(1) {
+  display: inline-block;
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #231f20;
+}
+.cta__btn .btn:nth-child(2) {
+  display: inline-block;
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #231f20;
+  background: transparent;
+  border: 1px solid #231f20;
 }
 
 /*# sourceMappingURL=style.css.map */
