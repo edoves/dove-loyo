@@ -1,0 +1,56 @@
+@use '../layouts/' as flex;
+@use '../abstract/' as mediaquery;
+
+.blog {
+  padding: 5rem 0;
+
+  // @include flex.dove-flex-layout("col");
+
+  .d-flex-layout {
+    // flex-wrap: wrap;
+    @include mediaquery.respond(ipad) {
+      display: flex;
+    }
+  }
+
+  .heading-h3 {
+    margin: 2rem 0;
+    font-size: clamp(1.8rem, 2.5vw, 7rem);
+  }
+
+  .col {
+    @include mediaquery.respond(ipad-min-max) {
+      flex: 1;
+    }
+  }
+
+  &__featured-img {
+    flex: 1 1 30%;
+  }
+
+  &__author {
+    font-size: clamp(1rem, 4vw, 1.4rem);
+  }
+
+  &__content {
+    color: #fff;
+    background: #231f20;
+    flex: 1 1 70%;
+    display: flex;
+    align-items: center;
+
+    @include mediaquery.respond(max-ipad) {
+      padding: 3rem 0;
+    }
+
+    .text {
+      width: 47%;
+      margin: auto 5rem auto;
+      a {
+        color: #fff;
+        text-transform: capitalize;
+        font-size: clamp(1rem, 4vw, 1.4rem);
+      }
+    }
+  }
+}

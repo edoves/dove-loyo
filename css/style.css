@@ -275,4 +275,49 @@ ul {
   border: 1px solid #231f20;
 }
 
+.blog {
+  padding: 5rem 0;
+}
+@media only screen and (min-width: 48em) {
+  .blog .d-flex-layout {
+    display: flex;
+  }
+}
+.blog .heading-h3 {
+  margin: 2rem 0;
+  font-size: clamp(1.8rem, 2.5vw, 7rem);
+}
+@media only screen and (min-width: 48em) and (max-width: 64em) {
+  .blog .col {
+    flex: 1;
+  }
+}
+.blog__featured-img {
+  flex: 1 1 30%;
+}
+.blog__author {
+  font-size: clamp(1rem, 4vw, 1.4rem);
+}
+.blog__content {
+  color: #fff;
+  background: #231f20;
+  flex: 1 1 70%;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 48em) {
+  .blog__content {
+    padding: 3rem 0;
+  }
+}
+.blog__content .text {
+  width: 47%;
+  margin: auto 5rem auto;
+}
+.blog__content .text a {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: clamp(1rem, 4vw, 1.4rem);
+}
+
 /*# sourceMappingURL=style.css.map */
