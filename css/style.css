@@ -225,7 +225,7 @@ ul {
   transition: box-shadow 0.3s ease-in-out;
 }
 .post__text:hover {
-  box-shadow: 1px 0px 9px 0px #888888;
+  box-shadow: 2px 5px 5px 0px rgba(136, 136, 136, 0.43);
 }
 .post__link {
   color: #000;
