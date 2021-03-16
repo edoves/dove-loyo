@@ -323,7 +323,7 @@ ul {
 }
 .blog__post {
   flex: 1 calc(100% / 2 - 1.5rem);
-  padding: 4rem;
+  padding: 4rem 6rem;
   margin-top: 4rem;
 }
 @media only screen and (min-width: 48em) {
