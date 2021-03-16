@@ -55,6 +55,12 @@ ul {
   font-size: clamp(2rem, 1vw, 3rem);
 }
 
+.heading-h4 {
+  margin: 2rem 0;
+  font-weight: 100;
+  font-size: clamp(1.8rem, 2.5vw, 7rem);
+}
+
 .lead {
   font-size: clamp(1.8rem, 1vw, 2rem);
   margin-bottom: 3rem;
@@ -283,10 +289,6 @@ ul {
     display: flex;
   }
 }
-.blog .heading-h3 {
-  margin: 2rem 0;
-  font-size: clamp(1.8rem, 2.5vw, 7rem);
-}
 @media only screen and (min-width: 48em) and (max-width: 64em) {
   .blog .col {
     flex: 1;
@@ -318,6 +320,23 @@ ul {
   color: #fff;
   text-transform: capitalize;
   font-size: clamp(1rem, 4vw, 1.4rem);
+}
+.blog__post {
+  flex: 1 calc(100% / 2 - 1.5rem);
+  padding: 4rem;
+  margin-top: 4rem;
+}
+@media only screen and (min-width: 48em) {
+  .blog__post {
+    transform: scale(0.9);
+  }
+}
+.blog__post .heading-h4 {
+  font-weight: 600;
+  font-size: clamp(1.8rem, 2.5vw, 3rem);
+}
+.blog__post:nth-child(1) {
+  box-shadow: 2px 5px 5px 0px rgba(136, 136, 136, 0.43);
 }
 
 /*# sourceMappingURL=style.css.map */

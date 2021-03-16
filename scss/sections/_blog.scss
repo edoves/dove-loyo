@@ -13,11 +13,6 @@
     }
   }
 
-  .heading-h3 {
-    margin: 2rem 0;
-    font-size: clamp(1.8rem, 2.5vw, 7rem);
-  }
-
   .col {
     @include mediaquery.respond(ipad-min-max) {
       flex: 1;
@@ -51,6 +46,24 @@
         text-transform: capitalize;
         font-size: clamp(1rem, 4vw, 1.4rem);
       }
+    }
+  }
+
+  &__post {
+    flex: 1 calc(100% / 2 - 1.5rem);
+    padding: 4rem;
+    margin-top: 4rem;
+
+    @include mediaquery.respond(ipad) {
+      transform: scale(0.9);
+    }
+    .heading-h4 {
+      font-weight: 600;
+      font-size: clamp(1.8rem, 2.5vw, 3rem);
+    }
+
+    &:nth-child(1) {
+      box-shadow: 2px 5px 5px 0px rgb(136 136 136 / 43%);
     }
   }
 }
