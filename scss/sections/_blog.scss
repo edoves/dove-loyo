@@ -43,19 +43,20 @@
       margin: auto 5rem auto;
       a {
         color: #fff;
-        text-transform: capitalize;
-        font-size: clamp(1rem, 4vw, 1.4rem);
+        // text-transform: capitalize;
+        // font-size: clamp(1rem, 4vw, 1.4rem);
       }
     }
   }
 
   &__post {
     flex: 1 calc(100% / 2 - 1.5rem);
-    padding: 4rem 6rem;
+    padding: 4rem;
     margin-top: 4rem;
 
     @include mediaquery.respond(ipad) {
       transform: scale(0.9);
+      padding: 4rem 6rem;
     }
     .heading-h4 {
       font-weight: 600;
@@ -65,5 +66,13 @@
     &:nth-child(1) {
       box-shadow: 2px 5px 5px 0px rgb(136 136 136 / 43%);
     }
+    a {
+      color: #000;
+    }
+  }
+
+  a {
+    text-transform: capitalize;
+    font-size: clamp(1rem, 4vw, 1.6rem);
   }
 }

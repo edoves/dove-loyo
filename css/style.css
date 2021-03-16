@@ -318,17 +318,16 @@ ul {
 }
 .blog__content .text a {
   color: #fff;
-  text-transform: capitalize;
-  font-size: clamp(1rem, 4vw, 1.4rem);
 }
 .blog__post {
   flex: 1 calc(100% / 2 - 1.5rem);
-  padding: 4rem 6rem;
+  padding: 4rem;
   margin-top: 4rem;
 }
 @media only screen and (min-width: 48em) {
   .blog__post {
     transform: scale(0.9);
+    padding: 4rem 6rem;
   }
 }
 .blog__post .heading-h4 {
@@ -337,6 +336,13 @@ ul {
 }
 .blog__post:nth-child(1) {
   box-shadow: 2px 5px 5px 0px rgba(136, 136, 136, 0.43);
+}
+.blog__post a {
+  color: #000;
+}
+.blog a {
+  text-transform: capitalize;
+  font-size: clamp(1rem, 4vw, 1.6rem);
 }
 
 /*# sourceMappingURL=style.css.map */
