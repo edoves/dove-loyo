@@ -13,6 +13,12 @@
   font-size: clamp(2rem, 1vw, 3rem);
 }
 
+.heading-h4 {
+  margin: 2rem 0;
+  font-weight: 100;
+  font-size: clamp(1.8rem, 2.5vw, 7rem);
+}
+
 .lead {
   font-size: clamp(1.8rem, 1vw, 2rem);
   margin-bottom: 3rem;
