@@ -345,4 +345,47 @@ ul {
   font-size: clamp(1rem, 4vw, 1.6rem);
 }
 
+.footer {
+  padding: 8rem 0;
+}
+.footer__nav {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 115rem;
+  position: relative;
+}
+.footer__nav:after {
+  content: "";
+  height: 0.2rem;
+  background: #000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3rem;
+  width: 100%;
+}
+.footer__nav ul {
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+@media only screen and (min-width: 48em) {
+  .footer__nav ul {
+    display: flex;
+  }
+}
+.footer__nav ul li {
+  margin: 1rem;
+}
+.footer__nav ul li a {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.footer__nav ul li a img {
+  width: 5rem;
+}
+
 /*# sourceMappingURL=style.css.map */

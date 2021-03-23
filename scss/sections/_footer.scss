@@ -1,0 +1,46 @@
+@use '../abstract/' as var;
+@use '../abstract/' as mediaquery;
+
+.footer {
+  padding: 8rem 0;
+  &__nav {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 115rem;
+    position: relative;
+
+    &:after {
+      content: "";
+      height: 0.2rem;
+      background: #000;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -3rem;
+      width: 100%;
+    }
+    ul {
+      text-align: center;
+
+      align-items: center;
+      justify-content: space-around;
+
+      @include mediaquery.respond(ipad) {
+        display: flex;
+      }
+      li {
+        margin: 1rem;
+        a {
+          color: #000;
+          font-size: 1.6rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          display: inline-block;
+          img {
+            width: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
