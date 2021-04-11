@@ -3,33 +3,28 @@
 
 .footer {
   padding: 8rem 0;
-  &__nav {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 115rem;
-    position: relative;
 
-    &:after {
-      content: "";
-      height: 0.2rem;
-      background: #000;
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -3rem;
-      width: 100%;
-    }
+  &__nav {
+    margin: 0 auto;
+    max-width: 80rem;
+
     ul {
       text-align: center;
-
       align-items: center;
       justify-content: space-around;
+      margin-bottom: 3rem;
+      display: flex;
 
-      @include mediaquery.respond(ipad) {
-        display: flex;
-      }
+      // @include mediaquery.respond(ipad) {
+      //   display: flex;
+      // }
+
       li {
         margin: 1rem;
+        .logo {
+          position: relative;
+          top: 0.7rem;
+        }
         a {
           color: #000;
           font-size: 1.6rem;
@@ -40,6 +35,38 @@
             width: 5rem;
           }
         }
+      }
+    }
+  }
+
+  .line {
+    height: 0.1rem;
+    width: 80%;
+    margin: 0 auto;
+    background: #000;
+  }
+
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    justify-content: space-around;
+    li {
+      background-color: #000;
+      border-radius: 50px;
+      height: 5rem;
+      width: 5rem;
+      font-size: 2.4rem;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      margin-right: 1rem;
+      a {
+        color: #fff;
       }
     }
   }
